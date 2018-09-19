@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.GridLayout;
+import android.widget.LinearLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,8 +28,6 @@ public class EasterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exp);
-//        Button playBtn1 = findViewById(R.id.playBtn1);
-//        buttons.add(playBtn1);
         buttons.add((Button) findViewById(R.id.playBtn1));
         buttons.add((Button) findViewById(R.id.playBtn2));
         buttons.add((Button) findViewById(R.id.playBtn3));
@@ -49,6 +49,9 @@ public class EasterActivity extends AppCompatActivity {
             Random rnd = new Random();
             int color = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
             button.setBackgroundColor(color);
+            LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) button.getLayoutParams();
+            params.weight = rnd.nextInt(10);
+            button.setLayoutParams(params);
         }
     }
 

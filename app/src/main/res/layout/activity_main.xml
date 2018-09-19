@@ -1,39 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
-    <LinearLayout
+    <EditText
+        android:id="@+id/edit_text"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="@dimen/common_btn_height"
+        android:gravity="top"
+        android:hint="@string/some_number_here"
+        android:imeOptions="actionDone"
+        android:inputType="textAutoCorrect"
+        android:lines="3"
+        android:textColor="@color/textColor"
+        android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/common_btn_height"
-            android:hint="@string/some_number_here"
-            android:gravity="top"
-            android:inputType="number"
-            android:textColor="@color/textColor"
-            android:textStyle="bold"
-            />
-        <Button
-            android:id="@+id/previewBtn"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/common_btn_height"
-            android:outlineAmbientShadowColor="@color/textColor"
-            android:text="@string/previewBtnText"/>
-        <Button
-            android:id="@+id/play_game_btn"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/common_btn_height"
-            android:text="@string/play_game_btn_text"/>
-
-    </LinearLayout>
+    <Button
+        android:id="@+id/preview_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_btn_height"
+        android:outlineAmbientShadowColor="@color/textColor"
+        android:text="@string/previewBtnText" />
 
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
+
