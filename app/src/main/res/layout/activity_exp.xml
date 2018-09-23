@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EasterActivity"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/playBtn1"
+        android:layout_width="@dimen/common_btn_width"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:id="@+id/playBtn2"
+        android:layout_width="@dimen/common_btn_width"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:id="@+id/playBtn3"
+        android:layout_width="@dimen/common_btn_width"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:id="@+id/playBtn4"
+        android:layout_width="@dimen/common_btn_width"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:id="@+id/playBtn5"
+        android:layout_width="@dimen/common_btn_width"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+</LinearLayout>
+
